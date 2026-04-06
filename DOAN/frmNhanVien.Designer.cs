@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            button6 = new Button();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            btnSua = new Button();
             groupBox2 = new GroupBox();
             groupBox1 = new GroupBox();
-            textBox1 = new TextBox();
+            txtMK = new TextBox();
+            btnXuat = new Button();
+            btnThoat = new Button();
+            btnHuy = new Button();
+            btnLuu = new Button();
+            btnXoa = new Button();
+            txtVaiTro = new TextBox();
             dateTimePicker1 = new DateTimePicker();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
+            txtTK = new TextBox();
+            txtDiaChi = new TextBox();
+            txtSDT = new TextBox();
+            txtTen = new TextBox();
             label8 = new Label();
             label7 = new Label();
             label6 = new Label();
@@ -65,111 +65,52 @@
             dataGridView1.Margin = new Padding(4, 3, 4, 3);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1286, 293);
+            dataGridView1.Size = new Size(1146, 293);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellClick += dataGridView1_CellClick;
+            dataGridView1.CellFormatting += dataGridView1_CellFormatting;
             // 
-            // button6
+            // btnSua
             // 
-            button6.BackColor = Color.LightGreen;
-            button6.Image = Properties.Resources.microsoft_office_excel_logo_icon_145720;
-            button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(1017, 189);
-            button6.Margin = new Padding(4, 3, 4, 3);
-            button6.Name = "button6";
-            button6.Size = new Size(143, 52);
-            button6.TabIndex = 14;
-            button6.Text = "Xuất";
-            button6.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.LightGreen;
-            button5.Image = Properties.Resources.exit_icon_icons_com_70975;
-            button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(819, 189);
-            button5.Margin = new Padding(4, 3, 4, 3);
-            button5.Name = "button5";
-            button5.Size = new Size(143, 52);
-            button5.TabIndex = 11;
-            button5.Text = "  Thoát";
-            button5.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.LightGreen;
-            button4.Image = Properties.Resources.vcsconflicting_93497;
-            button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(632, 189);
-            button4.Margin = new Padding(4, 3, 4, 3);
-            button4.Name = "button4";
-            button4.Size = new Size(132, 52);
-            button4.TabIndex = 10;
-            button4.Text = "     Hủy Bỏ";
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.LightGreen;
-            button3.Image = Properties.Resources.Save_37110;
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(445, 189);
-            button3.Margin = new Padding(4, 3, 4, 3);
-            button3.Name = "button3";
-            button3.Size = new Size(132, 52);
-            button3.TabIndex = 9;
-            button3.Text = "  Lưu";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.Red;
-            button2.Image = Properties.Resources.seo_social_web_network_internet_262_icon_icons_com_61518;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(258, 189);
-            button2.Margin = new Padding(4, 3, 4, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(132, 52);
-            button2.TabIndex = 8;
-            button2.Text = " Xóa";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.LightGreen;
-            button1.Image = Properties.Resources.edit_pencil_6320__1_;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(71, 189);
-            button1.Margin = new Padding(4, 3, 4, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(132, 52);
-            button1.TabIndex = 7;
-            button1.Text = "  Sửa";
-            button1.UseVisualStyleBackColor = false;
+            btnSua.BackColor = Color.LightGreen;
+            btnSua.Image = Properties.Resources.edit_pencil_6320__1_;
+            btnSua.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSua.Location = new Point(75, 185);
+            btnSua.Margin = new Padding(4, 3, 4, 3);
+            btnSua.Name = "btnSua";
+            btnSua.Size = new Size(127, 46);
+            btnSua.TabIndex = 7;
+            btnSua.Text = "  Sửa";
+            btnSua.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 
             groupBox2.Controls.Add(dataGridView1);
             groupBox2.Dock = DockStyle.Bottom;
             groupBox2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox2.Location = new Point(0, 307);
+            groupBox2.Location = new Point(0, 286);
             groupBox2.Margin = new Padding(4, 3, 4, 3);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(4, 3, 4, 3);
-            groupBox2.Size = new Size(1294, 322);
+            groupBox2.Size = new Size(1154, 322);
             groupBox2.TabIndex = 4;
             groupBox2.TabStop = false;
             groupBox2.Text = "Danh sách sân";
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(txtMK);
+            groupBox1.Controls.Add(btnXuat);
+            groupBox1.Controls.Add(btnThoat);
+            groupBox1.Controls.Add(btnHuy);
+            groupBox1.Controls.Add(btnLuu);
+            groupBox1.Controls.Add(btnXoa);
+            groupBox1.Controls.Add(txtVaiTro);
             groupBox1.Controls.Add(dateTimePicker1);
-            groupBox1.Controls.Add(textBox6);
-            groupBox1.Controls.Add(textBox5);
-            groupBox1.Controls.Add(textBox4);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(txtTK);
+            groupBox1.Controls.Add(txtDiaChi);
+            groupBox1.Controls.Add(txtSDT);
+            groupBox1.Controls.Add(txtTen);
             groupBox1.Controls.Add(label8);
             groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(label6);
@@ -177,78 +118,134 @@
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(button6);
-            groupBox1.Controls.Add(button5);
-            groupBox1.Controls.Add(button4);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(button1);
+            groupBox1.Controls.Add(btnSua);
             groupBox1.Dock = DockStyle.Top;
             groupBox1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox1.Location = new Point(0, 0);
             groupBox1.Margin = new Padding(4, 3, 4, 3);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(4, 3, 4, 3);
-            groupBox1.Size = new Size(1294, 269);
+            groupBox1.Size = new Size(1154, 269);
             groupBox1.TabIndex = 3;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin nhân viên";
+            groupBox1.Enter += groupBox1_Enter;
             // 
-            // textBox1
+            // txtMK
             // 
-            textBox1.Location = new Point(1111, 100);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(151, 30);
-            textBox1.TabIndex = 31;
+            txtMK.Location = new Point(676, 105);
+            txtMK.Name = "txtMK";
+            txtMK.Size = new Size(134, 30);
+            txtMK.TabIndex = 37;
+            // 
+            // btnXuat
+            // 
+            btnXuat.BackColor = Color.LightGreen;
+            btnXuat.Image = Properties.Resources.microsoft_office_excel_logo_icon_145720;
+            btnXuat.ImageAlign = ContentAlignment.MiddleLeft;
+            btnXuat.Location = new Point(901, 185);
+            btnXuat.Name = "btnXuat";
+            btnXuat.Size = new Size(132, 46);
+            btnXuat.TabIndex = 36;
+            btnXuat.Text = "Xuất";
+            btnXuat.UseVisualStyleBackColor = false;
+            // 
+            // btnThoat
+            // 
+            btnThoat.BackColor = Color.LightGreen;
+            btnThoat.Image = Properties.Resources.exit_icon_icons_com_70975;
+            btnThoat.ImageAlign = ContentAlignment.MiddleLeft;
+            btnThoat.Location = new Point(730, 185);
+            btnThoat.Name = "btnThoat";
+            btnThoat.Size = new Size(132, 46);
+            btnThoat.TabIndex = 35;
+            btnThoat.Text = "  Thoát";
+            btnThoat.UseVisualStyleBackColor = false;
+            btnThoat.Click += btnThoat_Click;
+            // 
+            // btnHuy
+            // 
+            btnHuy.BackColor = Color.LightGreen;
+            btnHuy.Image = Properties.Resources.vcsconflicting_93497;
+            btnHuy.ImageAlign = ContentAlignment.MiddleLeft;
+            btnHuy.Location = new Point(567, 185);
+            btnHuy.Name = "btnHuy";
+            btnHuy.Size = new Size(124, 46);
+            btnHuy.TabIndex = 34;
+            btnHuy.Text = "     Hủy Bỏ";
+            btnHuy.UseVisualStyleBackColor = false;
+            // 
+            // btnLuu
+            // 
+            btnLuu.BackColor = Color.LightGreen;
+            btnLuu.Image = Properties.Resources.Save_37110;
+            btnLuu.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLuu.Location = new Point(404, 185);
+            btnLuu.Name = "btnLuu";
+            btnLuu.Size = new Size(124, 46);
+            btnLuu.TabIndex = 33;
+            btnLuu.Text = "  Lưu";
+            btnLuu.UseVisualStyleBackColor = false;
+            // 
+            // btnXoa
+            // 
+            btnXoa.BackColor = Color.Red;
+            btnXoa.Image = Properties.Resources.seo_social_web_network_internet_262_icon_icons_com_61518;
+            btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
+            btnXoa.Location = new Point(241, 185);
+            btnXoa.Name = "btnXoa";
+            btnXoa.Size = new Size(124, 46);
+            btnXoa.TabIndex = 32;
+            btnXoa.Text = " Xóa";
+            btnXoa.UseVisualStyleBackColor = false;
+            // 
+            // txtVaiTro
+            // 
+            txtVaiTro.Location = new Point(988, 92);
+            txtVaiTro.Name = "txtVaiTro";
+            txtVaiTro.Size = new Size(151, 30);
+            txtVaiTro.TabIndex = 31;
             // 
             // dateTimePicker1
             // 
             dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(1111, 49);
+            dateTimePicker1.Location = new Point(988, 41);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(151, 30);
             dateTimePicker1.TabIndex = 30;
             // 
-            // textBox6
+            // txtTK
             // 
-            textBox6.Location = new Point(779, 108);
-            textBox6.Name = "textBox6";
-            textBox6.PasswordChar = '*';
-            textBox6.Size = new Size(144, 30);
-            textBox6.TabIndex = 29;
+            txtTK.Location = new Point(447, 105);
+            txtTK.Name = "txtTK";
+            txtTK.Size = new Size(134, 30);
+            txtTK.TabIndex = 28;
             // 
-            // textBox5
+            // txtDiaChi
             // 
-            textBox5.Location = new Point(516, 105);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(144, 30);
-            textBox5.TabIndex = 28;
+            txtDiaChi.Location = new Point(447, 47);
+            txtDiaChi.Name = "txtDiaChi";
+            txtDiaChi.Size = new Size(352, 30);
+            txtDiaChi.TabIndex = 27;
             // 
-            // textBox4
+            // txtSDT
             // 
-            textBox4.Location = new Point(516, 47);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(407, 30);
-            textBox4.TabIndex = 27;
+            txtSDT.Location = new Point(151, 107);
+            txtSDT.Name = "txtSDT";
+            txtSDT.Size = new Size(175, 30);
+            txtSDT.TabIndex = 26;
             // 
-            // textBox3
+            // txtTen
             // 
-            textBox3.Location = new Point(151, 107);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(238, 30);
-            textBox3.TabIndex = 26;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(151, 50);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(238, 30);
-            textBox2.TabIndex = 25;
+            txtTen.Location = new Point(151, 50);
+            txtTen.Name = "txtTen";
+            txtTen.Size = new Size(175, 30);
+            txtTen.TabIndex = 25;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(961, 102);
+            label8.Location = new Point(838, 94);
             label8.Name = "label8";
             label8.Size = new Size(75, 22);
             label8.TabIndex = 23;
@@ -257,7 +254,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(961, 55);
+            label7.Location = new Point(838, 47);
             label7.Name = "label7";
             label7.Size = new Size(133, 22);
             label7.TabIndex = 22;
@@ -266,7 +263,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(674, 108);
+            label6.Location = new Point(587, 110);
             label6.Name = "label6";
             label6.Size = new Size(93, 22);
             label6.TabIndex = 21;
@@ -275,7 +272,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(411, 108);
+            label5.Location = new Point(342, 108);
             label5.Name = "label5";
             label5.Size = new Size(99, 22);
             label5.TabIndex = 20;
@@ -284,7 +281,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(411, 55);
+            label4.Location = new Point(342, 55);
             label4.Name = "label4";
             label4.Size = new Size(78, 22);
             label4.TabIndex = 19;
@@ -313,7 +310,7 @@
             AutoScaleDimensions = new SizeF(11F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Honeydew;
-            ClientSize = new Size(1294, 629);
+            ClientSize = new Size(1154, 608);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -332,12 +329,7 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private Button button6;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private Button btnSua;
         private GroupBox groupBox2;
         private GroupBox groupBox1;
         private Label label3;
@@ -348,11 +340,16 @@
         private Label label5;
         private Label label4;
         private DateTimePicker dateTimePicker1;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtTK;
+        private TextBox txtDiaChi;
+        private TextBox txtSDT;
+        private TextBox txtTen;
+        private TextBox txtVaiTro;
+        private Button btnXuat;
+        private Button btnThoat;
+        private Button btnHuy;
+        private Button btnLuu;
+        private Button btnXoa;
+        private TextBox txtMK;
     }
 }

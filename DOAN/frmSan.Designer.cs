@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            button6 = new Button();
-            comboBox1 = new ComboBox();
-            textBox1 = new TextBox();
-            button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
-            comboBox2 = new ComboBox();
-            textBox2 = new TextBox();
+            cboTrangThai = new ComboBox();
+            cboLoai = new ComboBox();
+            txtGia = new TextBox();
+            txtTen = new TextBox();
+            btnThoat = new Button();
+            btnHuy = new Button();
+            btnLuu = new Button();
+            btnXoa = new Button();
+            btnSua = new Button();
+            btnXuat = new Button();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            txtTenSan = new TextBox();
             groupBox2 = new GroupBox();
             dataGridView1 = new DataGridView();
             groupBox1.SuspendLayout();
@@ -52,16 +53,16 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(button6);
-            groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(button5);
-            groupBox1.Controls.Add(button4);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(comboBox2);
-            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(cboTrangThai);
+            groupBox1.Controls.Add(cboLoai);
+            groupBox1.Controls.Add(txtGia);
+            groupBox1.Controls.Add(txtTen);
+            groupBox1.Controls.Add(btnThoat);
+            groupBox1.Controls.Add(btnHuy);
+            groupBox1.Controls.Add(btnLuu);
+            groupBox1.Controls.Add(btnXoa);
+            groupBox1.Controls.Add(btnSua);
+            groupBox1.Controls.Add(btnXuat);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
@@ -70,117 +71,121 @@
             groupBox1.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox1.Location = new Point(0, 0);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1055, 234);
+            groupBox1.Size = new Size(1016, 234);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin sân";
             // 
-            // button6
+            // cboTrangThai
             // 
-            button6.BackColor = Color.LightGreen;
-            button6.Image = Properties.Resources.microsoft_office_excel_logo_icon_145720;
-            button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(865, 171);
-            button6.Name = "button6";
-            button6.Size = new Size(137, 43);
-            button6.TabIndex = 14;
-            button6.Text = "Xuất";
-            button6.UseVisualStyleBackColor = false;
+            cboTrangThai.FormattingEnabled = true;
+            cboTrangThai.Location = new Point(602, 100);
+            cboTrangThai.Name = "cboTrangThai";
+            cboTrangThai.Size = new Size(252, 30);
+            cboTrangThai.TabIndex = 44;
             // 
-            // comboBox1
+            // cboLoai
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(205, 118);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(241, 30);
-            comboBox1.TabIndex = 13;
+            cboLoai.FormattingEnabled = true;
+            cboLoai.Location = new Point(195, 100);
+            cboLoai.Name = "cboLoai";
+            cboLoai.Size = new Size(252, 30);
+            cboLoai.TabIndex = 43;
             // 
-            // textBox1
+            // txtGia
             // 
-            textBox1.Location = new Point(205, 48);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(241, 30);
-            textBox1.TabIndex = 12;
+            txtGia.Location = new Point(602, 29);
+            txtGia.Name = "txtGia";
+            txtGia.Size = new Size(252, 30);
+            txtGia.TabIndex = 42;
             // 
-            // button5
+            // txtTen
             // 
-            button5.BackColor = Color.LightGreen;
-            button5.Image = Properties.Resources.exit_icon_icons_com_70975;
-            button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(695, 171);
-            button5.Name = "button5";
-            button5.Size = new Size(137, 43);
-            button5.TabIndex = 11;
-            button5.Text = "  Thoát";
-            button5.UseVisualStyleBackColor = false;
+            txtTen.Location = new Point(195, 29);
+            txtTen.Name = "txtTen";
+            txtTen.Size = new Size(252, 30);
+            txtTen.TabIndex = 41;
             // 
-            // button4
+            // btnThoat
             // 
-            button4.BackColor = Color.LightGreen;
-            button4.Image = Properties.Resources.vcsconflicting_93497;
-            button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(537, 171);
-            button4.Name = "button4";
-            button4.Size = new Size(129, 43);
-            button4.TabIndex = 10;
-            button4.Text = "     Hủy Bỏ";
-            button4.UseVisualStyleBackColor = false;
+            btnThoat.BackColor = Color.LightGreen;
+            btnThoat.Image = Properties.Resources.exit_icon_icons_com_70975;
+            btnThoat.ImageAlign = ContentAlignment.MiddleLeft;
+            btnThoat.Location = new Point(685, 168);
+            btnThoat.Name = "btnThoat";
+            btnThoat.Size = new Size(137, 48);
+            btnThoat.TabIndex = 40;
+            btnThoat.Text = "  Thoát";
+            btnThoat.UseVisualStyleBackColor = false;
+            btnThoat.Click += this.btnThoat_Click;
             // 
-            // button3
+            // btnHuy
             // 
-            button3.BackColor = Color.LightGreen;
-            button3.Image = Properties.Resources.Save_37110;
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(371, 171);
-            button3.Name = "button3";
-            button3.Size = new Size(129, 43);
-            button3.TabIndex = 9;
-            button3.Text = "  Lưu";
-            button3.UseVisualStyleBackColor = false;
+            btnHuy.BackColor = Color.LightGreen;
+            btnHuy.Image = Properties.Resources.vcsconflicting_93497;
+            btnHuy.ImageAlign = ContentAlignment.MiddleLeft;
+            btnHuy.Location = new Point(527, 168);
+            btnHuy.Name = "btnHuy";
+            btnHuy.Size = new Size(129, 48);
+            btnHuy.TabIndex = 39;
+            btnHuy.Text = "     Hủy Bỏ";
+            btnHuy.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnLuu
             // 
-            button2.BackColor = Color.Red;
-            button2.Image = Properties.Resources.seo_social_web_network_internet_262_icon_icons_com_61518;
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(205, 171);
-            button2.Name = "button2";
-            button2.Size = new Size(129, 43);
-            button2.TabIndex = 8;
-            button2.Text = " Xóa";
-            button2.UseVisualStyleBackColor = false;
+            btnLuu.BackColor = Color.LightGreen;
+            btnLuu.Image = Properties.Resources.Save_37110;
+            btnLuu.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLuu.Location = new Point(361, 168);
+            btnLuu.Name = "btnLuu";
+            btnLuu.Size = new Size(129, 48);
+            btnLuu.TabIndex = 38;
+            btnLuu.Text = "  Lưu";
+            btnLuu.UseVisualStyleBackColor = false;
+            btnLuu.Click += btnLuu_Click;
             // 
-            // button1
+            // btnXoa
             // 
-            button1.BackColor = Color.LightGreen;
-            button1.Image = Properties.Resources.edit_pencil_6320__1_;
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(39, 171);
-            button1.Name = "button1";
-            button1.Size = new Size(129, 43);
-            button1.TabIndex = 7;
-            button1.Text = "  Sửa";
-            button1.UseVisualStyleBackColor = false;
+            btnXoa.BackColor = Color.Red;
+            btnXoa.Image = Properties.Resources.seo_social_web_network_internet_262_icon_icons_com_61518;
+            btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
+            btnXoa.Location = new Point(195, 168);
+            btnXoa.Name = "btnXoa";
+            btnXoa.Size = new Size(129, 48);
+            btnXoa.TabIndex = 37;
+            btnXoa.Text = " Xóa";
+            btnXoa.UseVisualStyleBackColor = false;
             // 
-            // comboBox2
+            // btnSua
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(637, 115);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(241, 30);
-            comboBox2.TabIndex = 3;
+            btnSua.BackColor = Color.LightGreen;
+            btnSua.Image = Properties.Resources.edit_pencil_6320__1_;
+            btnSua.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSua.Location = new Point(27, 168);
+            btnSua.Margin = new Padding(4, 3, 4, 3);
+            btnSua.Name = "btnSua";
+            btnSua.Size = new Size(132, 48);
+            btnSua.TabIndex = 36;
+            btnSua.Text = "  Sửa";
+            btnSua.UseVisualStyleBackColor = false;
+            btnSua.Click += btnSua_Click;
             // 
-            // textBox2
+            // btnXuat
             // 
-            textBox2.Location = new Point(637, 44);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(241, 30);
-            textBox2.TabIndex = 6;
+            btnXuat.BackColor = Color.LightGreen;
+            btnXuat.Image = Properties.Resources.microsoft_office_excel_logo_icon_145720;
+            btnXuat.ImageAlign = ContentAlignment.MiddleLeft;
+            btnXuat.Location = new Point(847, 168);
+            btnXuat.Name = "btnXuat";
+            btnXuat.Size = new Size(137, 48);
+            btnXuat.TabIndex = 14;
+            btnXuat.Text = "Xuất";
+            btnXuat.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(511, 118);
+            label4.Location = new Point(497, 103);
             label4.Name = "label4";
             label4.Size = new Size(102, 22);
             label4.TabIndex = 4;
@@ -189,7 +194,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(511, 51);
+            label3.Location = new Point(497, 36);
             label3.Name = "label3";
             label3.Size = new Size(89, 22);
             label3.TabIndex = 3;
@@ -199,7 +204,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(109, 118);
+            label2.Location = new Point(95, 103);
             label2.Name = "label2";
             label2.Size = new Size(86, 22);
             label2.TabIndex = 2;
@@ -208,20 +213,27 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(109, 51);
+            label1.Location = new Point(95, 36);
             label1.Name = "label1";
             label1.Size = new Size(80, 22);
             label1.TabIndex = 0;
             label1.Text = "Tên Sân:";
+            // 
+            // txtTenSan
+            // 
+            txtTenSan.Location = new Point(191, 33);
+            txtTenSan.Name = "txtTenSan";
+            txtTenSan.Size = new Size(241, 27);
+            txtTenSan.TabIndex = 12;
             // 
             // groupBox2
             // 
             groupBox2.Controls.Add(dataGridView1);
             groupBox2.Dock = DockStyle.Bottom;
             groupBox2.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox2.Location = new Point(0, 258);
+            groupBox2.Location = new Point(0, 317);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1055, 291);
+            groupBox2.Size = new Size(1016, 291);
             groupBox2.TabIndex = 2;
             groupBox2.TabStop = false;
             groupBox2.Text = "Danh sách sân";
@@ -237,15 +249,16 @@
             dataGridView1.MultiSelect = false;
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1049, 262);
+            dataGridView1.Size = new Size(1010, 262);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // frmSan
             // 
             AutoScaleDimensions = new SizeF(12F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Honeydew;
-            ClientSize = new Size(1055, 549);
+            ClientSize = new Size(1016, 608);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Font = new Font("Times New Roman", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -275,8 +288,17 @@
         private TextBox textBox2;
         private GroupBox groupBox2;
         private DataGridView dataGridView1;
-        private Button button6;
+        private Button btnXuat;
         private ComboBox comboBox1;
-        private TextBox textBox1;
+        private TextBox txtTenSan;
+        private Button btnThoat;
+        private Button btnHuy;
+        private Button btnLuu;
+        private Button btnXoa;
+        private Button btnSua;
+        private ComboBox cboTrangThai;
+        private ComboBox cboLoai;
+        private TextBox txtGia;
+        private TextBox txtTen;
     }
 }
